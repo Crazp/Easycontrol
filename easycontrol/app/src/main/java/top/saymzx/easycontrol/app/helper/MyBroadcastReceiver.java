@@ -64,7 +64,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
   }
 
   private void handleScreenOff() {
-    for (Device device : AdbTools.devicesList) Client.sendAction(device.uuid, "close", null, 0);
+    return;
   }
 
   private void handleControl(Intent intent) {
